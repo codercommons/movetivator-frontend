@@ -1,13 +1,35 @@
 let auth_link = "https://www.strava.com/oauth/token"
 
-// get activity function
+//get activity
 
 function getActivity(access_token) {
 
-let activity_link = `https://www.strava.com/api/v3/athlete/activities?access_token=${access_token}`
-    fetch(activity_link)
-        .then(res => console.log(res.json()))
+    let activity_link = `https://www.strava.com/api/v3/athlete/activities?access_token=${access_token}`
+        fetch(activity_link)
+            .then(res => console.log(res.json()))
 }
+
+//get stats
+
+// function getStats(access_token, _id) {
+
+//     let stats_link = `https://www.strava.com/api/v3/athletes/${_id}/stats?access_token=${access_token}`
+//         fetch(stats_link)
+//             .then(res => console.log(res.json()))
+// }
+
+// get athlete function
+
+// function getAthlete(access_token) {
+
+// let athlete_link = `https://www.strava.com/api/v3/athlete?access_token=${access_token}`
+//     fetch(athlete_link)
+//         .then(res => res.json())
+//         .then(res => {
+//             let id = res.id;
+//             getStats(access_token, id);
+//         })
+// }
 
 //Authenticate User
 
