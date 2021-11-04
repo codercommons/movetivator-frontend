@@ -1,0 +1,134 @@
+.navbar {
+    display: flex;
+}
+.navbar-brand {
+    height: 100px;
+    width: 100%;
+}
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+}
+.navbar-nav a {
+    color: #8B451A;
+    margin: 0px 10px 0px 10px;
+}
+.learn {
+    border: solid 3px #8B451A;
+}
+h1 {
+    color: #8B451A;
+}
+#hero {
+    display: flex;
+}
+#hero-right {
+    display: flex;
+    align-items: center;
+}
+#intro {
+    display: flex;
+    justify-content: center;
+    color: #8B451A;
+}
+#intro h5 {
+    margin-right: 5px;
+    animation-name: fade_in;
+    animation-duration: 1.5s;
+    position: relative;
+    bottom: -8px;
+
+}
+#intro h2 {
+    margin-left: 5px;
+    position:relative;
+    animation-name: fade_in;
+    animation-duration: 1.5s;
+}
+#section-1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    animation-name: fade_in;
+    animation-duration: 1.5s;
+    position: relative;
+    color: #8B451A;
+}
+
+@keyframes fade_in {
+    0% {bottom: 50px; opacity: 0;}
+    100% {bottom: 0px; opacity: 1;}
+  }
+
+#section-2 {
+    display: flex;
+    color: #8B451A;
+}
+
+#section-2-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation-name: fade_in_right;
+    animation-duration: 1.5s;
+    position: relative;
+}
+
+#section-2-right {
+    animation-name: fade_in_left;
+    animation-duration: 1.5s;
+    position: relative;
+
+}
+
+@keyframes fade_in_left {
+    0% {left: 50px; opacity: 0;}
+    100% {left: 0px; opacity: 1;}
+  }
+  @keyframes fade_in_right {
+    0% {right: 50px; opacity: 0;}
+    100% {right: 0px; opacity: 1;}
+  }
+
+#section-3 {
+    display: flex;
+    color: #8B451A;
+}
+
+#section-3-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation-name: fade_in_left;
+    animation-duration: 1.5s;
+    position: relative;
+}
+#team {
+    color: #8B451A;
+}
+.profile {
+    height: 150px;
+    width: 100%;
+}
+.team-1-row {
+    display: flex;
+}
+.team-1-row div {
+    display: flex;
+    margin: 5px 10px 5px 10px;
+}
+.team-1-row div img {
+    margin-right: 10px;
+}
+.team-2-row {
+    display: flex;
+}
+.team-2-row div {
+    display: flex;
+    margin: 5px 10px 5px 10px;
+}
+.team-2-row div img {
+    margin-right: 10px;
+}
