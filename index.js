@@ -54,4 +54,4 @@ function reAuthorize() {
 
     })
 }
-reAuthorize();
+
